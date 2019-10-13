@@ -26,78 +26,33 @@ class Entradasaida extends StatelessWidget {
                 ),
 
 
-              Container(
-              height: 40,
-              alignment: Alignment.topRight,
-              child: FlatButton(
-                child: Text("+"),
+      new Container(
+
+        child: new Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            new FloatingActionButton(
               onPressed: () {
-                Navigator.pop(context, false);}
-            ),
-            ),       
-            SizedBox(
-            child: Text(
-              "1. Coca Cola",
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-                color: Colors.black,
-                fontSize: 35,
-                fontFamily: "Big Shoulders Display",
-              ),
-            ),
-            ),
+                Navigator.pop(context, false);},
+              child: new Icon(Icons.add, color: Colors.black,),
+              backgroundColor: Colors.white,),
 
-             SizedBox(
-            child: Text(
-              "2. Feijão",
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-                color: Colors.black,
-                fontSize: 35,
-                fontFamily: "Big Shoulders Display",
-              ),
-            ),
-            ),
+            new Text('aaaaaa',
+                style: new TextStyle(fontSize: 30.0)),
 
-             SizedBox(
-            child: Text(
-              "3. Arroz",
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-                color: Colors.black,
-                fontSize: 35,
-                fontFamily: "Big Shoulders Display",
-              ),
-            ),
-            ),
-
-             SizedBox(
-            child: Text(
-              "4. Presunto",
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-                color: Colors.black,
-                fontSize: 35,fontFamily: "Big Shoulders Display",
-              ),
-            ),
-            ),
-
-             SizedBox(
-            child: Text(
-              "5. Banana",
-              style: TextStyle(
-                fontWeight: FontWeight.w400,
-                color: Colors.black,
-                fontSize: 35,
-                fontFamily: "Big Shoulders Display",
-              ),
-            ),
-            ),
-              
-              ]
-        )
-       )
-    );
- }
-}
+            new FloatingActionButton(
+              onPressed: () {
+                Navigator.pop(context, false);},
+              child: new Icon(
+               const IconData(0xe15b, fontFamily: 'MaterialIcons'),
+                 color: Colors.black),
+              backgroundColor: Colors.white,),
           
+           ],
+        ),
+      ),]
+    ),
+           )
+  );
+}
+} 
